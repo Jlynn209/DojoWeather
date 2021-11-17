@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DojoWeather</title>
+  </head>
+  <body>
+    <div class="navbar flex space-evenly align-c">
+      <h1>DojoWeather</h1>
+      <div class="cities align-c">
+        <h2 onclick="doLoading(this)">Burbank</h2>
+        <h2 onclick="doLoading(this)">Chicago</h2>
+        <h2 onclick="doLoading(this)">Dallas</h2>
+      </div>
+    </div>
+    <div class="top-header flex space-evenly">
+      <h1>San Jose</h1>
+      <div class="temp-row flex space-between">
+        <p>show temperature in</p>
+        <select onchange="convert(this)" name="temp" id="temp">
+          <option value="F">F</option>
+          <option value="C">C</option>
+        </select>
+      </div>
+    </div>
+    <div class="forecast-container flex space-evenly">
+      <div class="col flex column">
+        <h1>Today</h1>
+        <img src="assets\assets\some_rain.png" alt="" />
+        <p>some rain</p>
+        <div class="temps flex">
+          <h2 class="currentTemp">24</h2>
+          <h2 class="currentTemp">18</h2>
+        </div>
+      </div>
+      <div class="col flex column">
+        <h1>Tomorrow</h1>
+        <img src="assets\assets\some_sun.png" alt="" />
+        <p>some sun</p>
+        <div class="temps flex">
+          <h2 class="currentTemp">27</h2>
+          <h2 class="currentTemp">19</h2>
+        </div>
+      </div>
+      <div class="col flex column">
+        <h1>Friday</h1>
+        <img src="assets\assets\some_clouds.png" alt="" />
+        <p>some clouds</p>
+        <div class="temps flex">
+          <h2 class="currentTemp">21</h2>
+          <h2 class="currentTemp">16</h2>
+        </div>
+      </div>
+      <div class="col flex column">
+        <h1>Saturday</h1>
+        <img src="assets\assets\some_sun.png" alt="" />
+        <p>some some sun</p>
+        <div class="temps flex">
+          <h2 class="currentTemp">26</h2>
+          <h2 class="currentTemp">21</h2>
+        </div>
+      </div>
+    </div>
+    <div class="postion">
+      <h1>Stop! Cookie time</h1>
+      <div class="box flex">
+        <img src="assets\assets\cookie.png" alt="" />
+        <p>
+          We use cookie (sadly not the edible ones) to personalize content and
+          ad,s to provide social media features and to analyse our taffic.
+          <span><a href="">Read more...</a></span>
+        </p>
+        <button onclick="removeCookie()">I Accept</button>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

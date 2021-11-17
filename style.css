@@ -1,0 +1,80 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.cities {
+  margin-left: 650px;
+  height: 100px;
+  display: flex;
+}
+.cities h2 {
+  margin: 0px 20px 0px 20px;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.navbar {
+  background-color: #9fc5f8;
+  margin-bottom: 30px;
+}
+.navbar h1 {
+  margin-left: 30px;
+}
+
+.top-header {
+  border-bottom: 5px solid black;
+}
+
+.top-header h1 {
+  margin-right: 800px;
+}
+
+.temp-row p {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.col {
+  align-items: center;
+}
+
+.col h2 {
+  padding: 0px 5px 0px 5px;
+}
+
+.forecast-container {
+  margin-top: 20px;
+}
+
+.postion {
+  position: fixed;
+  border: 2px solid black;
+  bottom: 0%;
+  left: 20%;
+}
+
+.box button {
+  margin: 0px 50px 0px 50px;
+  width: 10%;
+  height: 40px;
+}
